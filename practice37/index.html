@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var givenString = 'amazing';
+        capitalizedEveryOtherLetter(givenString);
+         function capitalizedEveryOtherLetter(inputString) {
+             for(var i=0; i<inputString.length; i++){
+                 if(i%2 !== 0){
+                     inputString[i] = inputString[i].toUpperCase();
+                 }
+             }
+             console.log(inputString);
+             return inputString;
+         }
+
+
+//        var givenString = 'amazing';
+//        capitalizedEveryOtherLetter(givenString);
+//        function capitalizedEveryOtherLetter(inputString) {
+//            var newString ='';
+//            var upperCase = '';
+//            var lowerCase = '';
+//            for(var i=0; i<inputString.length; i++) {
+//                if(i%2 === 0 || i === 0){
+//                    lowerCase = inputString[i];
+//                    newString +=lowerCase;
+//                }else{
+//                    upperCase = inputString[i].toUpperCase();
+//                    newString +=upperCase;
+//                }
+//            }
+//            console.log(newString);
+//            return newString;
+//        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

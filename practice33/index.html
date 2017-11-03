@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var positiveInput = 124;
+        var negetiveInput = -876;
+        var nanInput = 'hello';
+
+        invert_negatives(negetiveInput);
+
+
+        function invert_negatives(num) {
+            if(typeof num !== 'number'){
+                console.log(false);
+                return false;
+                } else if(num >0){
+                    console.log(-num);
+                    return -num;
+                }else if(num <0){
+                    console.log(num);
+                    return num;
+
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var givenString = 'four score and seven years ago';
+        findVowelsAsNewString(givenString);
+        function findVowelsAsNewString(inputString) {
+            var newString = '';
+            for(var i=0; i<inputString.length; i++){
+                inputString = inputString.toLowerCase();
+                var vowelArr = ['a', 'e', 'i', 'o', 'u'];
+                if(vowelArr.indexOf(inputString[i]) !== -1){
+                    newString += inputString[i];
+                }
+            }
+            console.log(newString);
+            return newString;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

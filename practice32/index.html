@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+
+        findMiddleLetter('good');
+        function findMiddleLetter(inputLetter) {
+            if(inputLetter.length%2 === 0){
+                var resultEven = inputLetter[inputLetter.length/2 -1] + inputLetter[inputLetter.length/2];
+                return resultEven;
+            }else{
+                var result = inputLetter[Math.floor(inputLetter.length/2)];
+                return result;
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

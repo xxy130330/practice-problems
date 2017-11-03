@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var givenString = 'Hello my name is Stu';
+        pigLatin(givenString);
+        function pigLatin(inputString) {
+            inputString = inputString.toLowerCase();
+            var tempString ='';
+            var newString = '';
+            for(var i=0; i<inputString.length; i++ ){
+                while(inputString[i] !== ' '){
+                    if(inputString[i] == null){
+                        console.log(newString);
+                        return newString;
+                    }
+                    tempString += inputString[i];
+                    i++;
+                }
+
+                var firstLetter = tempString.slice(0,1);
+                tempString = tempString.substr(1);
+                newString += tempString + firstLetter +'ay' + ' ';
+                tempString ='';
+                if(inputString[i] == null){
+                    console.log(newString);
+                    return newString;
+                }
+            }
+            console.log(newString);
+            return newString;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

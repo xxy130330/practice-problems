@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var givenArr = [1,4,6,3,7,3,69,'cat', 45];
+        evenOdd(givenArr);
+
+        function evenOdd(inputArr) {
+            var evenArr = [];
+            var oddArr = [];
+            for(var i=0; i<inputArr.length; i++){
+                if(typeof inputArr[i] !== 'number'){
+                    break;
+                }else if(inputArr[i]%2 === 0){
+                    evenArr.push(inputArr[i]);
+                }else{
+                    oddArr.push(inputArr[i])
+                }
+            }
+            console.log(evenArr, oddArr);
+            return evenArr, oddArr;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

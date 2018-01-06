@@ -1,0 +1,38 @@
+<!--Given the following function call:-->
+
+<!--math_sequences(2,5);-->
+<!--And the resulting output:-->
+
+<!--["2+5=7", "2-5=-3", "2*5=10", "2/5=0.4"];-->
+<!--Create a function definition that achieves the output with the given input.-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        math_sequences(2, 5);
+
+        function math_sequences(num1, num2) {
+            var outputArr = [];
+            var ansPlus = num1 + num2;
+            var plusSequence = num1 + "+" +num2 + '=' + ansPlus;
+            outputArr.push(plusSequence);
+            var ansMinus = num1 - num2;
+            var plusSequence = num1 + "-" +num2 + '=' + ansMinus;
+            outputArr.push(plusSequence);
+            var ansTimes = num1 * num2;
+            var plusSequence = num1 + "*" +num2 + '=' + ansTimes;
+            outputArr.push(plusSequence);
+            var ansDivide = num1 / num2;
+            var plusSequence = num1 + "/" +num2 + '=' + ansDivide;
+            outputArr.push(plusSequence);
+            console.log(outputArr);
+            return outputArr;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

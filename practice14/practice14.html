@@ -11,13 +11,18 @@
         function array_factor(givenArr) {
             var obj = {};
             for(var i=0; i<givenArr.length; i++){
-                obj.givenArr[i] = null;
+                obj[givenArr[i]] = [];
                 var newArr = givenArr.splice(givenArr[i], 1);
                 for(var j=0; j<newArr.length; j++){
-
+                    if(givenArr[i] % newArr[j] === 0 ){
+                        if(obj[givenArr[i]].indexOf(newArr[j]) === -1) {
+                            obj[givenArr[i]] = newArr[j];
+                        }
+                    }
                 }
 
             }
+            return obj;
         }
     </script>
 </head>
